@@ -1,0 +1,112 @@
+@use 'vars' as *;
+
+@font-face {
+  font-family: 'Nunito-Regular'; 
+  src: url('../fonts/nunito.woff2') format('woff2'), 
+       url('../fonts/nunito.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Nunito-Italic'; 
+  src: url('../fonts/nunito-italic.woff2') format('woff2'), 
+       url('../fonts/nunito-italic.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+body {
+    font-family: 'Nunito-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: $primary-color;
+    padding: $spacing; 
+    text-align: center;
+
+    &__title {
+        color: #fff;
+        margin: 0;
+        font-family: 'Nunito-Italic', sans-serif;
+        font-style: italic;
+    }
+}
+
+.content {
+    padding: $spacing; 
+
+    .info {
+        background: #fff;
+        padding: $spacing; 
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        &__list {
+            margin: $spacing 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                padding: 10px;
+                border-bottom: 1px solid #eee;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    .button {
+        background-color: $secondary-color;
+        color: #fff;
+        padding: 10px; 
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #6a5e55;
+        }
+    }
+
+    .images {
+        display: flex;
+        gap: $spacing;
+        justify-content: space-evenly;
+
+        &__dachshund {
+            width: 400px; 
+            height: 200px; 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center; 
+            background-image: url(../img/dog2.jpg);
+        };
+
+        &__pug {
+            width: 400px; 
+            height: 200px; 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center; 
+            background-image: url(../img/Pug-dog.jpg);
+        };
+    }
+}
+
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
