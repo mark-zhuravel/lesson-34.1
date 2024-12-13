@@ -1,19 +1,19 @@
 @use 'vars' as *;
 
 @font-face {
-  font-family: 'Nunito-Regular'; 
-  src: url('../fonts/nunito.woff2') format('woff2'), 
-       url('../fonts/nunito.woff') format('woff'); 
-  font-weight: normal; 
-  font-style: normal; 
+    font-family: 'Nunito-Regular'; 
+    src: url('../fonts/nunito.woff2') format('woff2'), 
+         url('../fonts/nunito.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
 
 @font-face {
-  font-family: 'Nunito-Italic'; 
-  src: url('../fonts/nunito-italic.woff2') format('woff2'), 
-       url('../fonts/nunito-italic.woff') format('woff'); 
-  font-weight: normal; 
-  font-style: normal; 
+    font-family: 'Nunito-Italic'; 
+    src: url('../fonts/nunito-italic.woff2') format('woff2'), 
+         url('../fonts/nunito-italic.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
 
 body {
